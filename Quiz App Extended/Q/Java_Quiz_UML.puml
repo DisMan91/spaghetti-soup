@@ -1,0 +1,30 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class java.awt.Color
+class java.util.Scanner
+class java_quiz_app.q.JAVA_QUIZ_APP
+class java_quiz_app.q.Menu
+class java_quiz_app.q.Quiz_Form
+class java_quiz_app.q.Tutorial
+class java_quiz_app.q.Written_Answers
+class javax.swing.ButtonGroup
+class javax.swing.JButton
+class javax.swing.JFrame
+class javax.swing.JRadioButton
+class org.jfugue.player.Player
+java_quiz_app.q.Menu ..> java.lang.SuppressWarnings
+java_quiz_app.q.Menu --|> javax.swing.JFrame
+java_quiz_app.q.Quiz_Form ..> java.lang.SuppressWarnings
+java_quiz_app.q.Quiz_Form ..> java.awt.Color
+java_quiz_app.q.Quiz_Form ..> javax.swing.ButtonGroup
+java_quiz_app.q.Quiz_Form --|> javax.swing.JFrame
+java_quiz_app.q.Quiz_Form ..> javax.swing.JRadioButton
+java_quiz_app.q.Tutorial ..> java.lang.SuppressWarnings
+java_quiz_app.q.Tutorial --|> javax.swing.JFrame
+java_quiz_app.q.Tutorial ..> org.jfugue.player.Player
+java_quiz_app.q.Written_Answers ..> java.lang.SuppressWarnings
+java_quiz_app.q.Written_Answers ..> java.awt.Color
+java_quiz_app.q.Written_Answers ..> java.util.Scanner
+java_quiz_app.q.Written_Answers ..> javax.swing.JButton
+java_quiz_app.q.Written_Answers --|> javax.swing.JFrame
+@enduml
